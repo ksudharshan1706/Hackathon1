@@ -1,0 +1,80 @@
+h1:hover{
+background-color: rgba(78, 10, 73, 0.977) !important;
+  margin: 16px;
+  color: white !important;
+  transition: all 1000ms ease;
+}
+
+thead:hover{
+    background-color: rgb(58, 8, 65) !important;
+    color: white !important;
+    transition: all 1000ms ease;
+}
+
+table {
+    background-image: linear-gradient(to right, rgb(173, 131, 199) , rgb(196, 171, 225));
+  }
+
+  tr:hover{
+    background-color: rgb(58, 8, 65) !important;
+    color: white !important;
+    transition: all 1000ms ease;
+}
+
+  
+  h1,table { box-shadow: 5px 5px 10px 5px #33062c; }
+
+  .simple-transition {
+    /* background-color: lue; */
+    margin: 16px;
+    height: 300px;
+    width: 200px;
+    padding: 1%;
+    box-shadow: 5px 5px 5px 5px #470257; 
+    border-radius: 10%;
+    transition: all 1000ms ease;
+  }
+  .simple-transition:hover {
+    width: 100%;
+
+    color: white !important;
+    background-color: #400a4e;
+  }
+
+  .hover-3 {
+    --c: no-repeat linear-gradient(#400a4e 0 0);
+    background: 
+      var(--c)  calc(-101% + var(--p,0%)) 100%,
+      var(--c)  calc( 201% - var(--p,0%)) 0;
+    background-size: 50.1% var(--p,.08em);
+    /* transition: .3s var(--t,0s), background-position .3s calc(.3s - var(--t,0s)); */
+    transition: all 1000ms ease;
+  }
+
+  .hover-3:hover {
+    --p: 101%;
+    --t: 0.3s;
+    color: #fff;
+  }
+
+  
+.hover-2 {
+  background: 
+    linear-gradient(#400a4e 0 0) no-repeat
+     calc(200% - var(--p,0%)) 100% / 200% var(--p,.08em);
+  transition: all 1000ms ease;
+}
+.hover-2:hover {
+  --p: 100%;
+  --t: .3s;
+  color: #fff;
+}
+
+.hover-1 {
+  background: linear-gradient(#400a4e 0 0) var(--p, 0) / var(--p, 0) no-repeat;
+  transition: all 1000ms ease;
+}
+.hover-1:hover {
+  --p: 100%;
+  color: #fff;
+}
